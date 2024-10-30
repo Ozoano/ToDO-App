@@ -19,7 +19,7 @@ function App() {
       
      { /* props */}
       <Input setTodos={setTodos} />
-      <Todos todos={todos} />
+<Todos todos={todos} setTodos={setTodos} />
     </div>
   )
 }

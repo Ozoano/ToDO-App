@@ -1,12 +1,11 @@
 import TodoItem from "./TodoItem"
 
-function Todos({todos}){
+function Todos({todos, setTodos}){
 
   return (
       <ul>
         {todos.map((todo) =>
-        <TodoItem key={todo.id}
-        todo={todo}
+ <TodoItem key={todo.id} todo={todo} setTodos={setTodos}
         />)}
       </ul>
     )
